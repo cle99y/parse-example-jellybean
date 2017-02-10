@@ -17,9 +17,9 @@ import com.parse.SaveCallback;
 
 public class StartParse extends Application {
 
-    String appID = "___appID____";
+    String appID = "____appID____";
     String masterKey = "____masterKey____";
-    String serverURL = "____serverURL___";
+        String serverURL = "____serverID____";
 
     @Override
     public void onCreate() {
@@ -33,9 +33,9 @@ public class StartParse extends Application {
                 .build()
         );
 
-        ParseObject example = new ParseObject("MySimpleExample");
-        example.put("myNumber", "123");
-        example.put("myString", "easy does it");
+        ParseObject example = new ParseObject("NewObject");
+        example.put("myNumber", "009");
+        example.put("myString", "Bond, James Pond");
 
         example.saveInBackground(new SaveCallback() {
             @Override
